@@ -148,3 +148,14 @@ interface ClassExpression <: Class, Expression {
     type: "ClassExpression";
 }
 ```
+
+## MetaMemberExpression
+
+```js
+interface MetaMemberExpression <: MemberExpression {
+    type: "MetaMemberExpression";
+    object: Identifier;
+    property: Identifier;
+    computed: false;
+}
+```
