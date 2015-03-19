@@ -152,10 +152,9 @@ interface ClassExpression <: Class, Expression {
 ## MetaMemberExpression
 
 ```js
-interface MetaMemberExpression <: MemberExpression {
-    type: "MetaMemberExpression";
-    object: Identifier;
+interface MetaProperty <: Expression {
+    type: "MetaProperty";
+    meta: Identifier;
     property: Identifier;
-    computed: false;
 }
 ```
